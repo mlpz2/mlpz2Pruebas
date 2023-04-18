@@ -26,7 +26,7 @@
                 
             </div>
             <br>
-            <article>
+
                 <p font-size:80%; color:"white";>Un botón</p>
 
                 <button id="bo" onclick="button()">Mire la hora y cambie el color de
@@ -34,7 +34,8 @@
                     <p id="hora" font-size:80%;></p>
                 <br>
                 <button id="sorpb" onclick="sorpesa()"> ? </button>
-            </article>
+                
+
             <article>
                 <p font-size:80%;>Artículo de los Muppets</p>
                 <iframe width="10%" height="10%" src="https://www.youtube.com/embed/tgbNymZ7vqY">Muppets</iframe>
@@ -112,7 +113,7 @@ hora.innerHTML = "La hora de hoy es: " + h + ":" + m + " : " + s + " ,hoy es " +
     }
     var sorp = document.getElementById('sorpr');
     function sorpesa() {
-        if (sorp.style.display === "none" || !sorp.style.display) {
+        if (sorp.style.display === "block" || !sorp.style.display) {
             sorp.style.display = "block";
         } else {
             sorp.style.display = "none";
