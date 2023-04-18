@@ -3,9 +3,10 @@ p {
     margin-bottom:5px
  }
 
- #sorp {
+ #sorpr {
     text-decoration-color: yellow;
-    text-indent: 30%;
+    text-indent: 70%;
     text-size-adjust: 70%;
     text-align: justify;
+    display: none;
  }
