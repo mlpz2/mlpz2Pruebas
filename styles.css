@@ -2,4 +2,10 @@ p {
     margin-top:5px;
     margin-bottom:5px
  }
- 
+
+ #sorp {
+    text-decoration-color: yellow;
+    text-indent: 30%;
+    text-size-adjust: 70%;
+    text-align: justify;
+ }
