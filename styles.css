@@ -8,5 +8,5 @@ p {
     text-indent: 70%;
     text-size-adjust: 70%;
     text-align: justify;
-    display: none;
+    display: block;
  }
