@@ -4,57 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Webland</title>
+    
+</head>
 
-<body id="body">
+<body id="body" background:"descarga.jpeg";>
     <main>
         <header>
-            <h1>Bienvenid@ a <i>WebLandia</i><h1>
+            <h1 color:"white";>Bienvenid@ a <i>WebLandia</i><h1>
         </header>
         <nav>
-            <a src="/Mas">Más web</a>
-            <hr background-color="light-blue">
+            <a src="asunfpb2.github.io/Mas" color:"sandpowder">Más web</a>
+            <hr>
             </hr>
         </nav>
         <section>
+            <div id="sorp" display:none>
+                <article>
+                    <h1>SORPESA!!1!11!!</h1>
+                    <br>
+                    <iframe width="80%" height="80%" src="https://ideamosweb.com/wp-content/uploads/2021/06/Shitpost-y-el-Marketing-Digital-1.jpg">No tuviste que haberle dado</iframe>
+                </article>
+            </div>
             <article>
-                <h1>Bienvenido a webland</h1><button id="bo" onclick="button()">Mire la hora y cambie el color de
+                <p font-size:80%; color:"white";>Un botón</p>
+
+                <button id="bo" onclick="button()">Mire la hora y cambie el color de
                     fondo</button>
-                <hr>
-                </hr>
+                    <p id="hora" font-size:80%;></p>
+                <br>
+                <button id="sorp" onclick="sorpesa()"> ? </button>
             </article>
             <article>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <p font-size:80%;>Artículo de los Muppets</p>
+                <iframe width="42%" height="40%" src="https://www.youtube.com/embed/tgbNymZ7vqY">Muppets</iframe>
             </article>
-            
-            
-            <footer>
-                
-                
+            <br>
+
+        </section>
+            </main>
+            <br>
+            <footer color:"orange";>
+                <pre color:"orange";>
+
+
+
+
                 AsunFPB2
+
+
             
+            </pre>
             </footer>
+                
+                
+
+            
+
+
 
 </body>
 <script type="text/javascript">
-    let b = document.getElementById('body')
-    let d = new Date();
+
+    
+
+
+        
+
+    var b = document.getElementById('body');
+    var hora = document.getElementById('hora');
+    var d = new Date();
+    var s = d.getSeconds;
+    var m = d.getMinutes;
+    var h = d.getHours;
+    var day = d.getDay;
+    var year = d.getFullYear;
+
+
     function button() {
         
+        document.body.style.background = "#f3f3f3 url('descarga.jpeg') no-repeat right top"; 
  
 
+  document.body.style.backgroundImage = url('descarga.jpeg');
 
-  document.body.style.background-image: url('descarga.jpeg');
+  document.body.style.backgroundRepeat = no-repeat;
 
-  document.body.style.background-repeat: no-repeat;
+  document.body.style.backgroundAttachment = fixed;
 
-  document.body.style.background-attachment: fixed;
-
-  document.body.style.background-size: 100% 100%;
-
+  document.body.style.backgroundSize = "100%";
 
 
+const para = document.createElement("p");
+
+const node = document.createTextNode("");
+
+para.appendChild(node);
+
+hora.innerHTML = "La hora de hoy es: " + h + ":" + m + " : " + s + " ,hoy es " + day + " y estamos en el año " + year; 
 
 
+    }
+    var sorp = document.getElementById("sorp");
+    function sorpesa() {
+        if (sorp.style.display === "none" || !x.style.display) {
+            sorp.style.display = "block";
+        } else {
+            sorp.style.display = "none";
+        }
     }
         </script>
 </html>
